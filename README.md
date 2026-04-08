@@ -73,13 +73,13 @@ You should see the Login page.
 ================================================================
 
 ADMIN
-  Email    : admin@society.com
-  Password : password123
+  Email    : chaturvediaaditya@gmail.com
+  Password : 231302
   Access   : Full system access
 
 RESIDENT (Sample users)
-  Email    : rajesh@society.com
-  Password : password123
+  Email    : amitmishra5747@gmail.com
+  Password : 231302
   Flat     : A-101
 
   Email    : priya@society.com
@@ -87,8 +87,8 @@ RESIDENT (Sample users)
   Flat     : A-102
 
 STAFF
-  Email    : ravi@society.com
-  Password : password123
+  Email    : rohitmishra123.com
+  Password : 231302
   Role     : Maintenance Supervisor
 
 ================================================================
@@ -230,3 +230,6 @@ Society Management System. All pages are tested and working.
 ================================================================
  Version: 2.0 | Built with PHP + Bootstrap 5 + MySQL
 ================================================================
+
+👨‍💻 Author
+Aditya Chaturvedi
