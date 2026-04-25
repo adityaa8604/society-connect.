@@ -23,73 +23,7 @@ TECH STACK
   Database : MySQL 5.7+ / MariaDB
   Server   : Apache (XAMPP compatible)
 
-================================================================
- STEP-BY-STEP SETUP (XAMPP)
-================================================================
 
-STEP 1: COPY PROJECT FILES
----------------------------
-Copy the entire "society-connect" folder to:
-  Windows : C:\xampp\htdocs\society-connect\
-  Mac/Linux: /opt/lampp/htdocs/society-connect/
-
-STEP 2: START XAMPP
---------------------
-Open XAMPP Control Panel and START:
-  [✓] Apache
-  [✓] MySQL
-
-STEP 3: IMPORT DATABASE
-------------------------
-1. Open your browser and go to: http://localhost/phpmyadmin
-2. Click "New" in the left sidebar to create a new database
-   (OR use the Import tab directly — the SQL auto-creates the DB)
-3. Click "Import" tab at the top
-4. Click "Choose File" → select: society-connect/database/society.sql
-5. Click "Go" (blue button at bottom)
-6. You should see: "Import has been successfully finished"
-
-STEP 4: VERIFY DATABASE CONFIG
---------------------------------
-Open: society-connect/config/db.php
-
-Default settings (works with XAMPP default install):
-  DB_HOST = 'localhost'
-  DB_NAME = 'society_connect'
-  DB_USER = 'root'
-  DB_PASS = ''
-
-If your MySQL has a password, update DB_PASS accordingly.
-
-STEP 5: RUN THE APPLICATION
------------------------------
-Open your browser and go to:
-  http://localhost/society-connect/
-
-You should see the Login page.
-
-================================================================
- LOGIN CREDENTIALS
-================================================================
-
-ADMIN
-  Email    : chaturvediaaditya@gmail.com
-  Password : 231302
-  Access   : Full system access
-
-RESIDENT (Sample users)
-  Email    : amitmishra5747@gmail.com
-  Password : 231302
-  Flat     : A-101
-
-  Email    : priya@society.com
-  Password : password123
-  Flat     : A-102
-
-STAFF
-  Email    : rohitmishra123.com
-  Password : 231302
-  Role     : Maintenance Supervisor
 
 ================================================================
  FOLDER STRUCTURE
@@ -175,57 +109,8 @@ STAFF
   ✓ View and update complaint/task status
   ✓ Log visitor entries at gate
 
-================================================================
- TROUBLESHOOTING
-================================================================
 
-Problem : White page / PHP errors
-Solution: Enable error display in php.ini or check Apache logs
-          Make sure PHP 7.4+ is running
 
-Problem : Database connection failed
-Solution: 1. Check MySQL is running in XAMPP
-          2. Verify database name = society_connect
-          3. Check credentials in config/db.php
-
-Problem : Page not found (404)
-Solution: Make sure folder is named exactly "society-connect"
-          and is inside htdocs/
-
-Problem : Images not loading
-Solution: All images use online URLs from Unsplash
-          Requires internet connection for facility images
-
-Problem : Login says "Invalid credentials"
-Solution: Re-import the database.sql file fresh
-          All sample passwords = password123
-
-================================================================
- CUSTOMIZATION
-================================================================
-
-Change Society Name  : Edit APP_NAME in config/db.php
-Change Colors        : Edit CSS variables in assets/css/style.css
-Change DB Credentials: Edit config/db.php
-Add More Facilities  : INSERT into facilities table in phpMyAdmin
-
-================================================================
- REQUIREMENTS
-================================================================
-
-  PHP        : 7.4 or higher (8.x recommended)
-  MySQL      : 5.7+ or MariaDB 10.3+
-  Apache     : 2.4+
-  Browser    : Any modern browser (Chrome, Firefox, Edge, Safari)
-  Internet   : Required for CDN (Bootstrap, FontAwesome, Fonts)
-               and facility images (Unsplash)
-
-================================================================
- SUPPORT
-================================================================
-
-This project was built as a complete, production-ready
-Society Management System. All pages are tested and working.
 
 ================================================================
  Version: 2.0 | Built with PHP + Bootstrap 5 + MySQL
