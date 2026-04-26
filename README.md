@@ -1,120 +1,114 @@
-================================================================
- SOCIETY CONNECT v2.0 - Society Management System
- Complete Setup Guide
-================================================================
+# 🏠 Society Connect v2.0
 
-PROJECT OVERVIEW
-----------------
-Society Connect is a full-featured web application for managing
-residential societies. It includes:
-  - Role-based access (Admin / Resident / Staff)
-  - Resident & Flat Management
-  - Billing & Dues Tracking
-  - Complaint Management with staff assignment
-  - Visitor Log & Entry Management
-  - Facility Booking System
-  - Notice Board
-  - Vendor & Staff Management
+**Society Connect** is a web-based society management system designed to simplify and organize daily operations in residential societies. The system provides separate modules for Admin, Residents, and Staff to ensure smooth and efficient management.
 
-TECH STACK
-----------
-  Frontend : HTML5, Bootstrap 5, JavaScript, Font Awesome 6
-  Backend  : PHP (Core PHP with PDO)
-  Database : MySQL 5.7+ / MariaDB
-  Server   : Apache (XAMPP compatible)
+---
 
+## 🚀 Project Overview
 
+This application helps manage all essential society activities in one place, including residents, flats, billing, complaints, visitors, and facility bookings. It is built with simplicity and usability in mind.
 
-================================================================
- FOLDER STRUCTURE
-================================================================
+---
 
+## 🛠️ Tech Stack
+
+* **Frontend:** HTML5, Bootstrap 5, JavaScript, Font Awesome
+* **Backend:** Core PHP (PDO)
+* **Database:** MySQL
+* **Server:** Apache (XAMPP compatible)
+
+---
+
+## 📁 Folder Structure
+
+```
 society-connect/
 │
-├── admin/              ← Admin module
-│   ├── index.php       ← Admin Dashboard
-│   ├── residents.php   ← Manage Residents
-│   ├── staff.php       ← Staff Management
-│   ├── vendors.php     ← Vendor Management
-│   ├── flats.php       ← Flat Management
-│   ├── billing.php     ← Billing & Dues
-│   ├── complaints.php  ← Complaints Management
-│   ├── visitors.php    ← Visitor Logs
-│   ├── bookings.php    ← Facility Bookings
-│   └── notices.php     ← Notice Board
+├── admin/        (Admin module)
+├── user/         (Resident module)
+├── staff/        (Staff module)
 │
-├── user/               ← Resident module
-│   ├── index.php       ← Resident Dashboard
-│   ├── profile.php     ← My Profile
-│   ├── billing.php     ← View & Pay Bills
-│   ├── complaints.php  ← Lodge Complaints
-│   ├── bookings.php    ← Book Facilities
-│   ├── visitors.php    ← Visitor Pre-approval
-│   └── notices.php     ← View Notices
+├── config/       (Database configuration)
+├── assets/       (CSS & JS files)
+├── includes/     (Header, footer, sidebar)
+├── database/     (SQL file)
 │
-├── staff/              ← Staff module
-│   ├── index.php       ← Staff Dashboard
-│   ├── complaints.php  ← My Tasks
-│   └── visitors.php    ← Visitor Logging
-│
-├── config/
-│   └── db.php          ← DB config + helper functions
-│
-├── assets/
-│   ├── css/style.css   ← Main stylesheet
-│   └── js/main.js      ← Main JavaScript
-│
-├── includes/
-│   ├── header.php      ← Page header (HTML head + sidebar)
-│   ├── sidebar.php     ← Sidebar navigation
-│   └── footer.php      ← Page footer (scripts)
-│
-├── database/
-│   └── society.sql     ← Full database schema + sample data
-│
-├── login.php           ← Login page
-├── register.php        ← Registration page
-├── logout.php          ← Logout
-├── index.php           ← Root redirect
-└── README.txt          ← This file
+├── login.php
+├── register.php
+├── logout.php
+├── index.php
+└── README.md
+```
 
-================================================================
- FEATURES BY ROLE
-================================================================
+---
 
-ADMIN
-  ✓ Full dashboard with stats
-  ✓ Add/Remove/View residents & flat assignments
-  ✓ Manage staff (assign roles, shifts, salary)
-  ✓ Manage vendors and contracts
-  ✓ Manage all flats and occupancy
-  ✓ Auto-generate monthly maintenance bills
-  ✓ Mark bills as paid
-  ✓ View, assign, and update complaint status
-  ✓ Log and manage visitor entries
-  ✓ Approve/reject facility bookings
-  ✓ Post, pin, and manage notices
+## 👨‍💼 Admin Features
 
-RESIDENT
-  ✓ Personal dashboard with flat overview
-  ✓ View and pay maintenance bills online
-  ✓ Lodge and track complaints
-  ✓ Book society facilities
-  ✓ Pre-approve visitors
-  ✓ View society notices
-  ✓ Edit profile & change password
+* Dashboard with overall statistics
+* Manage residents and flat assignments
+* Staff and vendor management
+* Generate monthly maintenance bills
+* Track payments
+* Assign and monitor complaints
+* Manage visitor entries
+* Approve or reject facility bookings
+* Post and manage notices
 
-STAFF
-  ✓ Dashboard with assigned task summary
-  ✓ View and update complaint/task status
-  ✓ Log visitor entries at gate
+---
 
+## 👨‍👩‍👧 Resident Features
 
+* Personal dashboard
+* View and pay maintenance bills
+* Raise and track complaints
+* Book society facilities
+* Pre-approve visitors
+* View notices
+* Update profile
 
+---
 
-================================================================
- Version: 2.0 | Built with PHP + Bootstrap 5 + MySQL
-================================================================
+## 🛠️ Staff Features
 
-👨‍💻 Author
+* Dashboard with assigned tasks
+* Update complaint status
+* Manage visitor entries
+
+---
+
+## ✨ Key Highlights
+
+* Role-based authentication system
+* Clean and responsive UI
+* Secure backend using PDO
+* Well-structured and readable code
+* Beginner-friendly implementation
+
+---
+
+## ⚙️ Setup Instructions
+
+1. Install XAMPP and start Apache & MySQL
+2. Copy the project folder into `htdocs`
+3. Open phpMyAdmin and create a new database
+4. Import the file from `database/society.sql`
+5. Update database credentials in `config/db.php`
+6. Open your browser and run:
+
+   ```
+   http://localhost/society-connect
+   ```
+
+---
+
+## 📌 Notes
+
+* Use PHP version 7 or above
+* Make sure MySQL service is running
+
+---
+
+## 👨‍💻 Author
+
 Aditya Chaturvedi
+
